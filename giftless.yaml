@@ -1,0 +1,11 @@
+TRANSFER_ADAPTERS:
+  basic:
+    factory: giftless.transfer.basic_streaming:factory
+    options:
+      storage_class: giftless.storage.amazon_s3:AmazonS3Storage
+      storage_options:
+        bucket_name: CHANGE_ME
+AUTH_PROVIDERS:
+  - giftless.auth.allow_anon:read_write
+MIDDLEWARE:
+  - class: wsgi_basic_auth:BasicAuth
