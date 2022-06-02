@@ -153,3 +153,6 @@ werkzeug==2.1.1
     # via flask
 zipp==3.8.0
     # via importlib-metadata
+# Add gunicorn and basic auth
+gunicorn==20.1.0
+wsgi-basic-auth==1.1.0
